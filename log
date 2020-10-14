@@ -1,0 +1,47 @@
+Wed Oct 14 19:27:04 UTC 2020: 
+ sudoku.c | 20 ++++++++++++++++++--
+ 1 file changed, 18 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:60:15: error: unknown type name ‘node’; did you mean ‘Node’?
+               node* nuevo=copy(n);
+               ^~~~
+               Node
+sudoku.c:60:27: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+               node* nuevo=copy(n);
+                           ^~~~
+sudoku.c:61:15: error: implicit declaration of function ‘pushback’; did you mean ‘pushBack’? [-Werror=implicit-function-declaration]
+               pushback(lisa,nuevo);
+               ^~~~~~~~
+               pushBack
+sudoku.c:61:24: error: ‘lisa’ undeclared (first use in this function); did you mean ‘lista’?
+               pushback(lisa,nuevo);
+                        ^~~~
+                        lista
+sudoku.c:61:24: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+Wed Oct 14 19:27:14 UTC 2020: 
+ sudoku.c | 20 ++++++++++++++++++--
+ 1 file changed, 18 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:60:15: error: unknown type name ‘node’; did you mean ‘Node’?
+               node* nuevo=copy(n);
+               ^~~~
+               Node
+sudoku.c:60:27: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+               node* nuevo=copy(n);
+                           ^~~~
+sudoku.c:61:15: error: implicit declaration of function ‘pushback’; did you mean ‘pushBack’? [-Werror=implicit-function-declaration]
+               pushback(lista,nuevo);
+               ^~~~~~~~
+               pushBack
+cc1: all warnings being treated as errors
+Compilation failed
+Wed Oct 14 19:28:18 UTC 2020: 
+ sudoku.c | 20 ++++++++++++++++++--
+ 1 file changed, 18 insertions(+), 2 deletions(-)
+ tests:  2|4
+total_score: 15/70
+236ec3f
