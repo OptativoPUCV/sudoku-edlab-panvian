@@ -43,7 +43,7 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-  /*int i,j,k;
+  int i,j,k;
   for(i=0;i<9;i++) {
     for(j=0;j<9;j++) {
       for(k=0;k<9;k++) {
@@ -64,7 +64,7 @@ int is_valid(Node* n){
     int j=3*(k%3) + (p%3) ;
     printf("%d ",n->sudo[i][j]);
     if(p%3 == 2) printf("\n");
-  }*/
+  }
   return 1;
 }
 
