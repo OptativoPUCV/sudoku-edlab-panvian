@@ -47,12 +47,11 @@ int is_valid(Node* n){
   for(i=0;i<9;i++) {
     for(j=0;j<9;j++) {
       for(k=0;k<9;k++) {
+          if(n->sudo[i][j]==0) continue;
           if(n->sudo[i][j]==n->sudo[i][k]) {
-            printf("hola");
             if(j!=k) return 0;
           }
           if(n->sudo[i][j]==n->sudo[k][j]) {
-            //printf("hola");
             if(i!=k) return 0;
           }
       }
