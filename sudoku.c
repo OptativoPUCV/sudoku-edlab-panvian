@@ -57,24 +57,15 @@ int is_valid(Node* n){
       }
       k=(i/3)*3+j/3;
       for(p=0;p<9;p++){
+        if(n->sudo[i][j]==0) continue;
         l=3*(k/3) + (p/3);
         m=3*(k%3) + (p%3);
-        if(n->sudo[i][j]==0) continue;
         if(n->sudo[i][j]==n->sudo[l][m]) {
-            if(i!=l && j!=m) return 0;
+          if(i!=l && j!=m) return 0;
         }
       }
     }
   }
-  /*for(k=0;k<9;k++) {
-      for(p=0;p<9;p++){
-      int i=3*(k/3) + (p/3) ;
-      int j=3*(k%3) + (p%3);
-      //printf("%d ",n->sudo[i][j]);
-      //if(p%3 == 2) printf("\n");
-      printf("\n");
-    }
-  }*/
   return 1;
 }
 
