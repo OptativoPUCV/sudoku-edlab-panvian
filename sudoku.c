@@ -48,10 +48,10 @@ int is_valid(Node* n){
     for(j=0;j<9;j++) {
       for(k=0;k<9;k++) {
           if(n->sudo[i][j]==n->sudo[i][k]) {
-            if(j!=k) return 0;
+            if(j!=k) return 1;
           }
           if(n->sudo[i][j]==n->sudo[k][j]) {
-            if(i!=k) return 0;
+            if(i!=k) return 1;
           }
       }
     }
