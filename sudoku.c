@@ -60,7 +60,7 @@ int is_valid(Node* n){
         l=3*(k/3) + (p/3);
         m=3*(k%3) + (p%3);
         if(n->sudo[i][j]==n->sudo[l][m]) {
-            if(j!=m && i!=l) return 0;
+            if(i!=l && j!=m) return 0;
         }
       }
     }
