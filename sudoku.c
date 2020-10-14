@@ -48,7 +48,7 @@ int is_valid(Node* n){
     for(j=0;j<9;j++) {
       for(k=0;k<9;k++) {
           if(n->sudo[i][j]==n->sudo[i][k]) {
-            printf("hola");
+            //printf("hola");
             if(j!=k) return 0;
           }
           if(n->sudo[i][j]==n->sudo[k][j]) {
