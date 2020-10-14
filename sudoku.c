@@ -65,8 +65,10 @@ int is_valid(Node* n){
     int j=3*(k%3) + (p%3);
     printf("%d ",j);
     //printf("%d ",n->sudo[i][j]);
-    if(p%3 == 2) printf("\n");
+    //if(p%3 == 2) printf("\n");
+    printf("\n");
   }
+  printf("\n");
   return 1;
 }
 
