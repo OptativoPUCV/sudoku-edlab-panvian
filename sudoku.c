@@ -43,7 +43,7 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-  int i,j,k;
+  /*int i,j,k;
   for(i=0;i<9;i++) {
     for(j=0;j<9;j++) {
       for(k=0;k<9;k++) {
@@ -57,7 +57,7 @@ int is_valid(Node* n){
       }
     }
   }
-  /*int p; 
+  int p; 
   k=4;
   for(p=0;p<9;p++){
     int i=3*(k/3) + (p/3) ;
